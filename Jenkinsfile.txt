@@ -1,0 +1,10 @@
+pipeline {
+    agent any
+    stages {
+        stages('clone') {
+            step {
+                git 'https://github.com/gdnam/AI.git'
+            }
+        }
+    }
+}
